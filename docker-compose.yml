@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  ghost:
+    image: ghost:3.13.3-alpine
+    ports:
+      - 127.0.0.1:2368:2368
+    volumes:
+      - ./tmp/ghost:/var/lib/ghost/content
